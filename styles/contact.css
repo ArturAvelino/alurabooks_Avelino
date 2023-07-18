@@ -1,0 +1,74 @@
+.contact {
+    background-color: var(--white-background);
+    text-align: center;
+    padding: 1em;    
+}
+
+.contact_title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 1em;
+    background: var(--blue-gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact_text {
+    font-weight: 300;
+    margin-bottom: 1em;
+    background: var(--blue-gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact_email {
+    background: var(--blue-gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    border: 1px solid var(--blue-title-color);
+    color: var(--blue-title-color);
+    border-radius: 24px;
+    padding: 1em;
+    width: 90%;
+}
+
+.contact_email::placeholder {
+    font-family: var(--font_primary);
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 2em;
+    align-items: center;
+    color: var(--blue-title-color);
+    background: url("../assets/Email.svg") no-repeat;
+}
+
+@media screen and (min-width: 1024px) {
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+
+    .contact_email {
+        width: 30%;
+    }
+
+    .contact_description {
+        margin-right: 3em;
+        width: 30%;
+    }
+
+    .contact_title {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contact {
+        padding: 3em 15vw;
+    }
+}
